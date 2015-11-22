@@ -1,4 +1,4 @@
-# Useul packages
+# Useful packages
 library(shiny)
 library(leaflet)
 library(magrittr)
@@ -34,11 +34,13 @@ shinyServer(function(input, output) {
            "Aquitaine" = subset(df, df$Region == "Aquitaine"),
            "Nord-Pas-de-Calais" = subset(df, df$Region == "Nord-Pas-de-Calais"))
   })
+
   
   ## Show the entire table of our dataset
   output$table <- renderTable({
     datasetInput()[1:5]
   })
+  
   
   ## Create and show our Leaflet Map
   output$leafletMap <- renderLeaflet({

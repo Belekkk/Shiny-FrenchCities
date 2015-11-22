@@ -15,6 +15,7 @@ shinyUI(fluidPage(
       selectInput("dataset", "Choose a dataset (or a subset) :", 
                   choices = sort(c("all biggest cities", "Ile-de-France", "Provence-Alpes-Cote d'Azur", "Rhone-Alpes", 
                               "Midi-Pyrenees", "Pays de la Loire", "Alsace", "Languedoc-Roussillon", "Aquitaine", "Nord-Pas-de-Calais")))
+      
     ), 
 
     # MainPanel divided into 2 tabPanels
